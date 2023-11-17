@@ -1,0 +1,72 @@
+body {
+    background-color: #f4f3f7;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.company-profile {
+    background-color: #fcf8f8;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.company-profile .logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.company-profile .info {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.company-profile .additional-info {
+    margin-top: 20px;
+}
+
+.company-profile .additional-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.company-profile .additional-info li {
+    margin-bottom: 10px;
+}
+
+.company-profile .services,
+.company-profile .projects {
+    margin-top: 20px;
+}
+
+.company-profile .services ul,
+.company-profile .projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.company-profile .services li,
+.company-profile .projects li {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: rgb(134, 144, 229);
+    border: 1px solid #777;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 21px;
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 20px auto;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+}

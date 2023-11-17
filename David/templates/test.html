@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con Bordes Redondos</title>
+    <style>
+        .tabla-container {
+            display: flex;
+            justify-content: space-between; /* Distribuir las tablas uniformemente */
+            margin: 20px; /* Ajusta el margen según sea necesario */
+        }
+
+        table {
+            border: 1px solid white;
+            border-radius: 15px; 
+            overflow: hidden;
+            width: 100px; /* Ajusta el ancho de la tabla según sea necesario */
+        }
+
+        td {
+            border: 1px solid #000; /* Borde sólido de 1 píxel */
+            border-radius: 10px; /* Bordes redondos */
+            text-align: center;
+            vertical-align: middle;
+            padding: 10px; /* Añade un relleno para mejorar el aspecto visual */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Tabla de 1x1 con bordes redondos -->
+    <div class="tabla-container">
+        <!-- Tabla de 1x1 con bordes redondos -->
+        <table>
+            <tr>
+                <td>Energía</td>
+            </tr>
+        </table>
+        
+        <table>
+            <tr>
+                <td>Construcción</td>
+            </tr>
+        </table>
+        
+        <table>
+            <tr>
+                <td>Manufactura</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
