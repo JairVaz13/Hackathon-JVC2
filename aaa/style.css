@@ -1,9 +1,10 @@
 body {
-  background: #444;
+  background: #ffffff;
   color: #fff;
 }
 
 .cards__flex {
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -35,14 +36,14 @@ body {
   margin-top: auto;
   text-decoration: none;
   text-align: right;
-  background-color: brown;
+  background-color: #1E5B95;
   padding: 0.5em;
   color: white;
   transition: background-color 0.3s;
 }
 
 .card__saber-mas:hover {
-  background-color: darkgoldenrod;
+  background-color: #12385c;
 }
 
 .card__figure {
