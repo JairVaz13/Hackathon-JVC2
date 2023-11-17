@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <br>
+  <title>Resultados</title>
+  <link href="grafic.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <fieldset class="cabecera"></fieldset> 
+      <img src="ONION.png" style="">
+</head>
+<body class="body">
+  <p class="espaciado">Bienvenido a ONION</p>
+  <p class="p1">Presiona el botón para mostrar tu resultado del test:</p>
+  <button onclick="generarPorcentaje()" class="resultado">Resultado</button>
+  <p id="porcentaje">Porcentaje: </p>
+  
+  <fieldset>
+  <canvas id="myChart" width="350" height="250"></canvas>
+
+  <script>
+    // Variable para almacenar el porcentaje generado
+    var porcentaje = 0;
+
+    // Función para generar porcentajes y actualizar el gráfico circular
+    function generarPorcentaje() {
+      // Genera un número aleatorio entre 0 y 100
+      porcentaje = Math.floor(Math.random() * 101);
+
+      // Actualiza el contenido del elemento con el nuevo porcentaje
+      document.getElementById('porcentaje').innerText = 'Porcentaje: ' + porcentaje + '%';
+
+      // Llama a la función para actualizar el gráfico circular
+      actualizarGraficoCircular();
+    }
+
+    // Función para actualizar el gráfico circular con el porcentaje
+    function actualizarGraficoCircular() {
+      var ctx = document.getElementById('myChart').getContext('2d');
+      var myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: ['Completado', 'Restante'],
+          datasets: [{
+            data: [porcentaje, 100 - porcentaje],
+            backgroundColor: ['#36A2EB', '#FFFFFF'],
+            hoverOffset: 4
+          }]
+        },
+        options: {
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          responsive: true,
+          maintainAspectRatio: false
+        }
+      });
+    }
+  </script>
+  </fieldset>
+ 
+</head>
+<body>
+</html>

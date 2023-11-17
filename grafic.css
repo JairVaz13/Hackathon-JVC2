@@ -1,0 +1,90 @@
+/*******Graficas*******/
+
+    #porcentaje {
+      font-size: 24px;
+      color: #333;
+    }
+
+    canvas {
+      margin-top: 5px;
+    }
+
+    fieldset{
+      border: 0px;
+      border-color: #FFFFFF;
+    }
+
+    /*******fondo*******/
+
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+     .cabecera{
+            background-color: #1E5B95;
+            color: #fff;
+            padding: 35px;
+            text-align: center;
+            border-color: #0000;
+            margin: 15px;
+        }
+    img{
+    	width: 120px; 
+  		height: 70px; /* Altura de la imagen */
+  		padding: 90px;
+ 		border-radius: 100px; /* Bordes redondeados */
+  		position: absolute;
+  		top: -70px; /* Ajusta esta posición según tus necesidades */
+  		left: 10px;
+  		margin: 13px;
+    }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 5px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .espaciado{
+          font-size: 40px;
+          font-style: italic;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .p1{
+          font-size: 24px;
+          font-style: italic;
+          text-shadow: 2px 2px 4px rgba(0, , 1, 1.5);
+        }
+
+        .resultado{
+          display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background: linear-gradient(to bottom, #3498db, #2980b9); /* Gradiente de color azul */
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            transition: background 0.3s ease; /* Transición para el cambio de color al pasar el ratón */
+          }
