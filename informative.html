@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./informative.css">
+
+</head>
+<body>
+
+<section class="cards">
+  <!-- Card nº 1 -->
+  <div class="cards__flex">
+
+    <div class="card">
+      <a href="#lightbox-1">
+        <figure class="card__figure">
+          <img src="https://picsum.photos/id/0/300/" alt="" class="card__img">
+        </figure>
+
+        <h3 class="card__titulo">.....</h3>
+      </a>
+      <p class="card__texto">.....</p>
+      <p class="card__texto">.....</p>
+
+      <a href="#lightbox-1" class="card__saber-mas">Saber más</a>
+    </div>
+
+</section>
+
+<div class="lightboxes" id="lightbox-1">
+  <a href="#">
+    <!-- lightbox card nº 1 -->
+    <div class="lightbox">
+
+      <picture>
+
+        <source media="(min-width: 1280px)" srcset="https://picsum.photos/id/0/1200/500">
+
+        <source media="(max-width: 520px)" srcset="https://picsum.photos/id/0/300/500">
+
+        <img src="https://picsum.photos/id/0/600/400" alt="" class="lightbox__img">
+
+      </picture>
+
+      <div class="lightbox__desc">
+        <h3 class="lightbox__titulo">Título de mi tarjeta</h3>
+        <p class="lightbox__texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit suscipit atque doloremque repellendus non animi laudantium, ipsa facilis nostrum enim facere vel vero. Corrupti pariatur aliquid voluptatem dicta ipsum! Vitae.</p>
+      </div>
+      <a href="#" class="lightbox__cerrar">x</a>
+
+    </div>
+  </a>
+</div>
+<script type="text/javascript">
+  //Ejecutando funciones
+document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
+document.getElementById("btn__registrarse").addEventListener("click", register);
+window.addEventListener("resize", anchoPage);
+
+//Declarando variables
+var formulario_login = document.querySelector(".formulario__login");
+var formulario_register = document.querySelector(".formulario__register");
+var contenedor_login_register = document.querySelector(".contenedor__login-register");
+var caja_trasera_login = document.querySelector(".caja__trasera-login");
+var caja_trasera_register = document.querySelector(".caja__trasera-register");
+
+    //FUNCIONES
+
+function anchoPage(){
+
+    if (window.innerWidth > 850){
+        caja_trasera_register.style.display = "block";
+        caja_trasera_login.style.display = "block";
+    }else{
+        caja_trasera_register.style.display = "block";
+        caja_trasera_register.style.opacity = "1";
+        caja_trasera_login.style.display = "none";
+        formulario_login.style.display = "block";
+        contenedor_login_register.style.left = "0px";
+        formulario_register.style.display = "none";
+    }
+}
+
+anchoPage();
+
+
+    function iniciarSesion(){
+        if (window.innerWidth > 850){
+            formulario_login.style.display = "block";
+            contenedor_login_register.style.left = "10px";
+            formulario_register.style.display = "none";
+            caja_trasera_register.style.opacity = "1";
+            caja_trasera_login.style.opacity = "0";
+        }else{
+            formulario_login.style.display = "block";
+            contenedor_login_register.style.left = "0px";
+            formulario_register.style.display = "none";
+            caja_trasera_register.style.display = "block";
+            caja_trasera_login.style.display = "none";
+        }
+    }
+
+    function register(){
+        if (window.innerWidth > 850){
+            formulario_register.style.display = "block";
+            contenedor_login_register.style.left = "410px";
+            formulario_login.style.display = "none";
+            caja_trasera_register.style.opacity = "0";
+            caja_trasera_login.style.opacity = "1";
+        }else{
+            formulario_register.style.display = "block";
+            contenedor_login_register.style.left = "0px";
+            formulario_login.style.display = "none";
+            caja_trasera_register.style.display = "none";
+            caja_trasera_login.style.display = "block";
+            caja_trasera_login.style.opacity = "1";
+        }
+}
+</script>
+</body>
+</html>
