@@ -1,0 +1,71 @@
+body {
+    background-color: #f4f3f7;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+form {
+    background-color: #fcf8f8;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-control, h1 {
+    text-align: left;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-control input,
+.form-control select,
+.form-control textarea {
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 95%;
+}
+
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+
+.botonguardar{
+
+  font-size: 18px;
+  font-weight: 600px;
+  color: white;
+  padding: 10px 25px 0px 20px;
+  margin: 10px 8px 20px 0px;
+  float: center;
+  width: 175px; height: 700px; 
+  background-color: #1E5B95; 
+  -webkit-box-shadow: 0 3px rgba(58,87,175,.75); 
+  -moz-box-shadow: 0 3px rgba(58,87,175,.75); 
+  box-shadow: 0 3px rgba(58,87,175,.75);3
+  top: 100px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
